@@ -11,7 +11,10 @@
 ---
 
 ## Ejercicio 1 — Perfil de usuario
-**Explicación:** Lo que se ha pedido en este ejercicio es un Box,  lo que he hecho ha sido un box, introduciendole una foto, con otra caja en la que se incluyan los textos de la tarjeta de perfil.
+**Explicación:** Lo que se ha pedido en este ejercicio es una foto de perfil con texto superpuesto, lo que he hecho ha sido un box, introduciendole una foto, con otra caja en la que se incluyan los textos de la tarjeta de perfil.
+
+**Foto:**
+![e14a9941-e226-47fc-b86d-dfc4e59d07e0.jpg](fotos/e14a9941-e226-47fc-b86d-dfc4e59d07e0.jpg)
 
 **Código:**
 ```kotlin
@@ -63,6 +66,9 @@ fun PerfilUsuario(nombre: String, subtitle: String, modifier: Modifier) {
 ## Ejercicio 2 — Pantalla de configuración
 
 **Explicación:** En este ejercicio, lo que he hecho ha sido crear configuraciones, metiendole entre ellas un HorizontalDivider para crear la linea que divide entre cada elemento de la lista de configuraciones. He metido un row por cada elemento en la lista, para agregarle en el inicio de esta el texto, y luego en el final el botón/switch.
+
+**Foto**:
+![c8bc8633-11d7-4149-ace0-25e82da04fda.jpg](fotos/c8bc8633-11d7-4149-ace0-25e82da04fda.jpg)
 
 **Código:**
 
@@ -136,6 +142,9 @@ fun PantallaConfiguracion(modifier: Modifier = Modifier) {
 
 **Explicación:** Para crear la lista y mostrar los productos, lo que he hecho ha sido aplicarles un valor a las cadenas de texto que tengo en la lista, así, puedo usar el painterResource para pintar las imagenes guardadas en los valores de la lista.
 
+**Foto:**
+![a3069874-f949-449e-bc62-97d16f594b48.jpg](fotos/a3069874-f949-449e-bc62-97d16f594b48.jpg)
+
 **Código:**
 
 ```kotlin
@@ -202,6 +211,10 @@ fun ProductosDestacados(modifier: Modifier = Modifier) {
 ## Ejercicio 4 — Espaciadores
 
 **Explicación:** En este código, lo que he usado han sido los espaciadores 'Spacer' que me permiten crear espacios dentro de mi contenido. Para pegar el botón al fondo, lo que he hecho ha sido aplicarle "peso" al espaciador.
+
+**Foto:**
+![03c24328-0b37-459a-b893-d4e4a4f71f28.jpg](fotos/03c24328-0b37-459a-b893-d4e4a4f71f28.jpg)
+
 **Código:**
 ````kotlin
 @Composable
@@ -229,6 +242,9 @@ fun Espaciadores(modifier: Modifier = Modifier) {
 ## Ejercicio 5 — Cajas
 
 **Explicación:** Para este ejercicio, se han pedido varias cajas de distintos colores y tamaños en distintas configuraciones, lo que he hecho para poder colocar las cajas en distintos sitios es usar el weight, una propiedad del modifier que me permite mover las cajas a mi antojo y luego las he coloreado jugando con el fondo.
+
+**Foto:**
+![0a9d372e-328d-4af7-8e15-b94583d36f63.jpg](fotos/0a9d372e-328d-4af7-8e15-b94583d36f63.jpg)
 
 **Código:**
 
@@ -575,6 +591,9 @@ fun Cajas_Movido() {
 ## Ejercicio 6 — Tarjeta con ConstraintLayout
 
 **Explicación:** Para crear este código, se requiere el uso de un `ConstraintLayout`. Se ha pedido la creación de una tarjeta de perfil, para ello, se ha empleado una Card, en la que dentro se ha implementado el ConstraintLayout, luego dentro, se han establecido las referencias de posición de los distintos elementos.
+
+**Foto:**
+![18b1cc31-971a-4ace-8bd9-805336352334.jpg](fotos/18b1cc31-971a-4ace-8bd9-805336352334.jpg)
 
 **Código:**
 
