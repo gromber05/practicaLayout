@@ -1,8 +1,3 @@
-Aquí lo tienes pasado a **Markdown (.md)**, sin tocar tu contenido:
-
----
-
-````md
 # Práctica Layout - Gonzalo Romero Bernal
 
 ## 1. Objetivo de la práctica
