@@ -1,11 +1,8 @@
 # Práctica Layout - Gonzalo Romero Bernal
 
-## 1. Objetivo de la práctica
-Escribe aquí 2–4 frases explicando que la práctica consiste en crear una interfaz simple con Jetpack Compose usando `@Composable`, `@Preview` y `modifiers` para personalizar apariencia y disposición.
-
 ---
 
-## 2. Creación del proyecto
+## Creación del proyecto
 **Nombre del proyecto:** prácticaLayout  
 **Tipo:** Empty Activity  
 **Lenguaje:** Kotlin  
@@ -14,7 +11,7 @@ Escribe aquí 2–4 frases explicando que la práctica consiste en crear una int
 ---
 
 ## Ejercicio 1 — Perfil de usuario
-**Explicación breve:** Qué hace tu primer composable y por qué es reutilizable.
+**Explicación:** Lo que se ha pedido en este ejercicio es un Box,  lo que he hecho ha sido un box, introduciendole una foto, con otra caja en la que se incluyan los textos de la tarjeta de perfil.
 
 **Código:**
 ```kotlin
@@ -65,7 +62,7 @@ fun PerfilUsuario(nombre: String, subtitle: String, modifier: Modifier) {
 
 ## Ejercicio 2 — Pantalla de configuración
 
-**Explicación:** Para previsualizar sin ejecutar la app.
+**Explicación:** En este ejercicio, lo que he hecho ha sido crear configuraciones, metiendole entre ellas un HorizontalDivider para crear la linea que divide entre cada elemento de la lista de configuraciones. He metido un row por cada elemento en la lista, para agregarle en el inicio de esta el texto, y luego en el final el botón/switch.
 
 **Código:**
 
@@ -137,7 +134,7 @@ fun PantallaConfiguracion(modifier: Modifier = Modifier) {
 
 ## Ejercicio 3 — Lista de productos
 
-**Explicación:** Para previsualizar sin ejecutar la app.
+**Explicación:** Para crear la lista y mostrar los productos, lo que he hecho ha sido aplicarles un valor a las cadenas de texto que tengo en la lista, así, puedo usar el painterResource para pintar las imagenes guardadas en los valores de la lista.
 
 **Código:**
 
@@ -204,14 +201,34 @@ fun ProductosDestacados(modifier: Modifier = Modifier) {
 
 ## Ejercicio 4 — Espaciadores
 
-**Explicación:** Para previsualizar sin ejecutar la app.
-**Código:** *(No pegado en el mensaje)*
-
+**Explicación:** En este código, lo que he usado han sido los espaciadores 'Spacer' que me permiten crear espacios dentro de mi contenido. Para pegar el botón al fondo, lo que he hecho ha sido aplicarle "peso" al espaciador.
+**Código:**
+````kotlin
+@Composable
+fun Espaciadores(modifier: Modifier = Modifier) {
+    val ctx = LocalContext.current
+    Column(
+        modifier = modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally
+        ){
+        Spacer(Modifier.padding(2.dp))
+        Text(text = "Título principal", fontSize = 32.sp)
+        Spacer(Modifier.padding(10.dp))
+        Text(text = "Subtitulo", fontSize = 16.sp)
+        Spacer(Modifier.weight(1f))
+        Button(
+            onClick = {
+                Toast.makeText(ctx, "Hola buenos dias", Toast.LENGTH_SHORT).show()
+            }
+        ) { Text("Púlsame") }
+    }
+}
+````
 ---
 
 ## Ejercicio 5 — Cajas
 
-**Explicación:** Para este ejercicio, se han pedido varias cajas...
+**Explicación:** Para este ejercicio, se han pedido varias cajas de distintos colores y tamaños en distintas posiciones puestas, lo que he hecho para poder colocar las cajas en distintos sitios es usar el offset, una propiedad del modifier que me permite mover las cajas a mi antojo y luego las he coloreado jugando con el fondo.
 
 **Código:**
 
@@ -288,7 +305,7 @@ fun Cajas(modifier: Modifier = Modifier) {
 
 ## Ejercicio 6 — Tarjeta con ConstraintLayout
 
-**Explicación:** Para crear este código, se requiere el uso de un `ConstraintLayout`...
+**Explicación:** Para crear este código, se requiere el uso de un `ConstraintLayout`. Se ha pedido la creación de una tarjeta de perfil, para ello, se ha empleado una Card, en la que dentro se ha implementado el ConstraintLayout, luego dentro, se han establecido las referencias de posición de los distintos elementos.
 
 **Código:**
 
