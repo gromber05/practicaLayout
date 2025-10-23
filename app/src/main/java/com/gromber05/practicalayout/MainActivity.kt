@@ -7,10 +7,10 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import com.gromber05.practicalayout.ejercicios.Cajas
 import com.gromber05.practicalayout.ejercicios.Constraints
 import com.gromber05.practicalayout.ejercicios.Espaciadores
 import com.gromber05.practicalayout.ejercicios.PantallaConfiguracion
+import com.gromber05.practicalayout.ejercicios.PantallaPrincipalCajas
 import com.gromber05.practicalayout.ejercicios.PerfilUsuario
 import com.gromber05.practicalayout.ejercicios.ProductosDestacados
 import com.gromber05.practicalayout.ui.theme.PracticaLayoutTheme
@@ -85,7 +85,7 @@ fun AppPrincipal() {
                 1 -> PantallaConfiguracion(Modifier.fillMaxSize())
                 2 -> ProductosDestacados(Modifier.fillMaxSize())
                 3 -> Espaciadores(Modifier.fillMaxSize())
-                4 -> Cajas(Modifier.fillMaxSize())
+                4 -> PantallaPrincipalCajas(Modifier.fillMaxSize())
                 5 -> Constraints(Modifier.fillMaxSize())
             }
         }
